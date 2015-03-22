@@ -1,14 +1,13 @@
-cript run_analysis.R is a complete self contained script which generates tidy data as required in the assignment.
+The sccript run_analysis.R is a complete self contained script which generates tidy data as required in the assignment.
 
-IMPORTANT: For the script run_analysis.R to work, you have to copy the script in the root directory of the data set.(getdata_projectfiles_UCI HAR Dataset\UCI HAR Dataset) 
+					IMPORTANT: For the script run_analysis.R to work, you have to copy the script in the root directory of the data set.(getdata_projectfiles_UCI HAR Dataset\UCI HAR Dataset) 
+						The script has following functions -
 
-The script has following functions -
-
-1.This function creates a tidy dataset from the test data
-create_dataset<-function(file_X = "./test/X_test.txt", 
-                file_Y= "./test/y_test.txt", 
-		                file_subject = "./test/subject_test.txt",
-				                features = "features.txt")
+						1.This function creates a tidy dataset from the test data
+							create_dataset<-function(file_X = "./test/X_test.txt", 
+                         file_Y= "./test/y_test.txt", 
+                         file_subject = "./test/subject_test.txt",
+                         features = "features.txt")
 
 						2.This function merges two data sets(test and train) by rows and sorts them by Subject .
 						merge_dataset <- function(data1,data2)
